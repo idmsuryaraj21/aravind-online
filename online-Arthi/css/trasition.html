@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="home">
+        <div class="child"></div>
+    </div>
+
+</body>
+</html>
+<style>
+    
+    .home{
+
+        background-color: yellow;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+
+    }
+
+    .child{
+
+        width: 100px;
+        height: 100px;
+        background-color: rgb(255, 0, 0);
+        transition: 2s;
+        animation-name: surya;
+        position: relative;
+        animation-duration:4s;
+        animation-iteration-count: infinite;
+
+    }
+
+    @media only screen and (max-width: 600px) {
+  .home {
+    background-color: lightblue;
+  }
+}
+
+@keyframes surya {
+    /* from{
+        left: 0;
+        top: 0;
+    }
+    to{
+        left: 100px;
+        top: 0;
+    } */
+
+
+    0%{
+        left: 0;
+        top: 0;
+    }
+    25%{
+        left: 200px;
+        top: 0;
+    }
+    50%{
+        top: 200px;
+        left: 200px;
+
+    }
+    75%{
+        left: 0;
+        top: 200px;
+    }
+    100%{
+        left: 0;
+        top:0;
+    }
+    
+}
+
+
+    .child:hover{
+
+        /* border-radius: 50%; */
+        transition: 2s;
+        /* transform: translateZ(200px); */
+        /* transform: scaleZ(2); */
+        /* transform: skewY(45deg); */
+        /* transform: rotateZ(180deg); */
+    }
+
+</style>

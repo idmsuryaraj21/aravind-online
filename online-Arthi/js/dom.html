@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- document object model -->
+
+    <h1 id="head" class="head">hello surya</h1>
+
+    <button onclick="h()">click me</button>
+
+
+    <script>
+        // let a = document.getElementById('head');
+        // let a = document.getElementsByClassName('head')[0];
+        // let a = document.getElementsByTagName('h1')[0];
+
+        let a  = document.querySelector("h1");
+
+        
+        console.log(a.innerText);
+
+        function h(){ 
+            a.innerHTML="hello Arathii" ;
+            a.style.backgroundColor="yellow"
+        
+        }
+    </script>
+</body>
+</html>
